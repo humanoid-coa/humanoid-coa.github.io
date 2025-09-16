@@ -1,11 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Humanoid COA</title>
+  
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Humanoid Agent via Embodied Chain-of-Action Reasoning with Multimodal Foundation Models for Zero-Shot Loco-Manipulation">
+  <meta name="keywords" content="Humanoid COA, Chain-of-Action, Foundation Models, Loco-Manipulation, Humanoid Robots, Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humanoid Agent via Embodied Chain-of-Action Reasoning with Multimodal Foundation Models for Zero-Shot Loco-Manipulation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
-  <h1>Welcome to Humanoid COA</h1>
-  <p>Research project homepage.</p>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Humanoid Agent via Embodied Chain-of-Action Reasoning with<br>
+            Multimodal Foundation Models for Zero-Shot Loco-Manipulation
+          </h1>
+                    <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block">
+              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+            </span> -->
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Anonymous,</span>
+            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <span class="link-block">
+                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (Coming Soon)</span> -->
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe
+            width="100%"             
+            height="450"             
+            src=""
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="has-text-centered">Demo video coming soon...</p>
+      </div>
+    </div>
+
+    <!--/ Paper video. -->
+
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Humanoid loco-manipulation, which integrates whole-body locomotion with dexterous manipulation, 
+            remains a fundamental challenge in robotics. Beyond whole-body coordination and balance, a central 
+            difficulty lies in understanding human instructions and translating them into coherent sequences of 
+            embodied actions. Recent advances in foundation models provide transferable multimodal representations 
+            and reasoning capabilities, yet existing efforts remain largely restricted to either locomotion or 
+            manipulation in isolation, with limited applicability to humanoid settings. In this paper, we propose 
+            Humanoid-COA, the first humanoid agent framework that integrates foundation model reasoning with an 
+            Embodied Chain-of-Action (CoA) mechanism for zero-shot loco-manipulation. Built upon the 
+            perception–reasoning–action paradigm, CoA Reasoning decomposes high-level human instructions into 
+            structured sequences of locomotion and manipulation primitives through affordance analysis, spatial 
+            inference, and whole-body action reasoning. Extensive experiments on two humanoid robots, Unitree H1-2 
+            and G1, in both an open test area and an apartment environment, demonstrate that our framework 
+            substantially outperforms prior baselines across manipulation, locomotion, and loco-manipulation tasks, 
+            achieving robust generalization to long-horizon and unstructured scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Methodology. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Methodology</h2>
+
+        <!-- Methodology Diagram. -->
+        <div class="content has-text-centered">
+          <img
+            src="./static/images/methodology.png"
+            alt="Methodology Diagram"
+            style="max-width: 100%; height: auto;"
+          />
+          <p class="has-text-centered">Methodology diagram coming soon...</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Methodology. -->
+
+    <!-- System Architecture -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">System Architecture</h2>
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column">
+              <h3 class="title is-4 has-text-centered">Perception Module</h3>
+              <div class="content has-text-centered">
+                <p>Advanced computer vision and sensor fusion for object detection and human gesture recognition.</p>
+                <img src="static/images/perception_placeholder.png" alt="Perception Module" style="width: 100%; height: 300px; object-fit: cover; background-color: #f0f0f0; border: 2px dashed #ccc;">
+              </div>
+            </div>
+            <div class="column">
+              <h3 class="title is-4 has-text-centered">Control Module</h3>
+              <div class="content has-text-centered">
+                <p>Adaptive control strategies and reinforcement learning for dynamic behavior adaptation.</p>
+                <img src="static/images/control_placeholder.png" alt="Control Module" style="width: 100%; height: 300px; object-fit: cover; background-color: #f0f0f0; border: 2px dashed #ccc;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Assembly Tasks -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Assembly Tasks</h2>
+        <div class="content">
+          <div class="content has-text-centered">
+            <img src="./static/images/assembly_tasks.png" alt="Assembly Tasks" style="max-width: 100%; height: auto;">
+            <p class="has-text-centered">Various assembly tasks demonstration coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Human-Robot Collaboration -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Human-Robot Collaboration</h2>
+        <div class="content has-text-centered">
+          <img src="./static/images/collaboration.png" alt="Human-Robot Collaboration" style="max-width: 100%; height: auto;">
+          <p class="has-text-centered">Collaboration scenarios coming soon...</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Evaluation -->
+    <div class="columns is-centered" style="margin-bottom: 3rem;">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Evaluation</h2>
+        <div class="content">
+          <div class="publication-video" style="margin-bottom: 2rem;">
+            <iframe
+              width="100%"             
+              height="450"             
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="has-text-centered">Evaluation results and metrics coming soon...</p>
+          
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="./static/images/performance_metrics.png" alt="Performance Metrics" style="max-width: 100%; height: auto;">
+              <p class="has-text-centered">Performance metrics and comparison with baseline methods.</p>
+            </div>
+            <div class="column">
+              <img src="./static/images/user_study.png" alt="User Study" style="max-width: 100%; height: auto;">
+              <p class="has-text-centered">User study results showing improved collaboration experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{onsubmission,
+  author    = {},
+  title     = {Humanoid Agent via Embodied Chain-of-Action Reasoning with Multimodal Foundation Models for Zero-Shot Loco-Manipulation},
+  journal   = {},
+  year      = {2025},
+}</code></pre>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from NeRFies <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .section {
+    margin-bottom: 4rem;
+  }
+  .title.is-4 {
+    font-size: 1.2rem;
+  }
+</style>
+
 </body>
 </html>
