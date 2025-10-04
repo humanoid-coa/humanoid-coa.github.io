@@ -158,16 +158,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe
-            width="100%"             
-            height="450"             
-            src=""
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video width="100%" height="450" controls muted loop autoplay>
+            <source src="./static/videos/ICRA26_3052_VI_i.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <p class="has-text-centered">Demo video coming soon...</p>
       </div>
     </div>
 
@@ -213,12 +208,21 @@
 
         <!-- Methodology Diagram. -->
         <div class="content has-text-centered">
-          <img
+          <!-- <img
             src="./static/images/methodology.png"
             alt="Methodology Diagram"
             style="max-width: 100%; height: auto;"
+          /> -->
+          <!-- <p class="has-text-centered">Methodology diagram coming soon...</p> -->
+        </div>
+        
+        <!-- Pipeline Figure. -->
+        <div class="content has-text-centered">
+          <img
+            src="./static/images/pipeline5.png"
+            alt="Pipeline Figure"
+            style="max-width: 100%; height: auto;"
           />
-          <p class="has-text-centered">Methodology diagram coming soon...</p>
         </div>
       </div>
     </div>
@@ -273,32 +277,24 @@
       </div>
     </div> -->
 
-    <!-- Evaluation -->
+    <!-- Performance Metrics -->
     <div class="columns is-centered" style="margin-bottom: 3rem;">
       <div class="column is-full-width">
-        <h2 class="title is-3">Evaluation</h2>
+        <h2 class="title is-3">Performance Metrics </h2>
         <div class="content">
-          <div class="publication-video" style="margin-bottom: 2rem;">
-            <iframe
-              width="100%"             
-              height="450"             
-              src=""
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div class="content has-text-centered">
+            <img src="./static/images/manipulatioresults_table.png" alt="Manipulation Results Table" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+            <img src="./static/images/loco_table.png" alt="Locomotion Table" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+            <img src="./static/images/locomanip_table.png" alt="Loco-Manipulation Table" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+            <img src="./static/images/action_table.png" alt="Action Table" style="max-width: 100%; height: auto;">
           </div>
-          <p class="has-text-centered">Evaluation results and metrics coming soon...</p>
           
-          <div class="columns is-centered">
-            <div class="column">
-              <img src="./static/images/performance_metrics.png" alt="Performance Metrics" style="max-width: 100%; height: auto;">
-              <p class="has-text-centered">Performance metrics and comparison with baseline methods.</p>
-            </div>
-            <div class="column">
-              <img src="./static/images/user_study.png" alt="User Study" style="max-width: 100%; height: auto;">
-              <p class="has-text-centered">User study results showing improved collaboration experience.</p>
-            </div>
+          <!-- References for the tables -->
+          <div class="content" style="margin-top: 2rem;">
+            <h3 class="title is-5">References used in performance metrics</h3>
+            <p>[14] J. Wang, A. Laurenzi, and N. Tsagarakis, "Autonomous Behavior Planning For Humanoid Loco-manipulation Through Grounded Language Model," in <em>2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2024, pp. 10855-10862.</p>
+            <p>[25] M. Murooka, I. Kumagai, M. Morisawa, F. Kanehiro, and A. Kheddar, "Humanoid loco-manipulation planning based on graph search and reachability maps," <em>IEEE Robotics and Automation Letters</em>, vol. 6, no. 2, pp. 1840–1847, 2021.</p>
+            <p>[26] W. Huang, P. Abbeel, D. Pathak, and I. Mordatch, "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents," in <em>International conference on machine learning</em>, pp. 9118–9147, PMLR, 2022.</p>
           </div>
         </div>
       </div>
@@ -357,6 +353,12 @@
   }
   .title.is-4 {
     font-size: 1.2rem;
+  }
+  .container.is-max-desktop {
+    max-width: 1400px !important;
+  }
+  .container {
+    max-width: 1400px !important;
   }
 </style>
 
